@@ -1,0 +1,6 @@
+---
+# tasks file for myapache
+- name: Install httpd Package
+  yum: name={{package_name}} state=latest
+  notify:
+  - restart apache
